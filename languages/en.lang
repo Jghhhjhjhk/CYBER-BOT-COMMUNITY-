@@ -1,116 +1,60 @@
-# If you want to move down the line, please use \n. e.g: tina\nULLASH.
-# After changed, you have to restart the bot to use.
-# Put the # character at the beginning of each sentence if you don't want the code to run those lines. 
-# Thanks to https://www.facebook.com/duong.than.net for translate to English!
-
-# Cyber.js 
-
-Cyber.newVersionDetected=𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 %1, 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐢𝐬 %2. 
-Cyber.errorFormat=Malformed module!
-Cyber.nameExist=Module's name is similar to another module!
-Cyber.notFoundLanguage=Module %1 don't support your language
-Cyber.notFoundPackage=Can't find package %1 support for module %2, installing...
-Cyber.cantInstallPackage=Can't install package %1 for module %2, error: %3
-Cyber.loadedPackage=Installed whole package successfully for module %1
-Cyber.loadedConfig=Installed config successfully for module %1
-Cyber.cantLoadConfig=Can't install config of module %1, error: %2
-Cyber.cantOnload=Can't launch setup of module %1, error: %1
-Cyber.successLoadModule=Successfully installed module %1
-Cyber.failLoadModule=Can't install module %1, error: %2
-Cyber.finishLoadModule=Installed %1 module commands and %2 module events successfully 
-Cyber.foundPathAppstate=Ullashstate successfully
-Cyber.notFoundPathAppstate=Error can't find appstate file maybe file is malformed!
-Cyber.checkListGban=Checking global ban list...
-Cyber.banDevice=Your device have been banned from ULLASH, please contact to facebook m.me/100086680386976 to know more information or asking for unban key, if you already have unban key, please fill it below.
-Cyber.keyNotSameFormat=Wrong format, code must contain 6 number.
-Cyber.codeInputExpired=Your code is wrong or out of date.
-Cyber.unbanDeviceSuccess=Your device are unban now, please restart to use.
-Cyber.userBanned=You had been banned from ullash when %1 with reason: %2. Please contact to facebook m.me/100086680386976 to have more information!
-Cyber.finishCheckListGban=Checked global ban list
-Cyber.handleListenError=handleListene has occurred some unexpected errorr, error : %1
-Cyber.warningSourceCode=DETECTED THAT SOURCE CODE'S STRUCTURE HAD BEEN CHANGED , STOP NOW!
-Cyber.refreshListen=Refreshed handleListener...
-Cyber.successConnectDatabase=Connected to database successfully!
-Cyber.failConnectDatabase=Failed to connect to database, error: %1
-
-# includes/listen.js
-
-listen.startLoadEnvironment=Proceed to load the environment variable ...
-listen.loadedEnvironmentThread=Loaded thread environment variable successfully 
-listen.loadedEnvironmentUser=Loaded user environment variable successfully 
-listen.successLoadEnvironment=Loaded environment variable successfully 
-listen.failLoadEnvironment=Can't load environment variable, error: %1
-
-# includes/controller/currencies.js
-
-currencies.needObjectOrArray=Have to be an Array or an Object or maybe both
-currencies.needObject=Have to be an Object
-currencies.needNumber= Have to be an number
-
-# includes/controller/threads.js
-
-threads.needObjectOrArray=Have to be an Array or an Object or maybe both
-threads.needObject=Have to be an Object 
-
-# includes/controller/users.js
-
-users.needObjectOrArray=Have to be an Array or an Object or maybe both
-users.needObject=Have to be an Object
-
-# includes/handle/handleCommand.js
-
-handleCommand.userBanned=বক্স এ আবলামি করার অপরাধে তোরে  বেন করে দেওয়া হয়েছে-!!🚫
-handleCommand.threadBanned=Group Has Been Banned..!⛔️\nPlease Contact Owner Md Jahid Hasan Rajib  For Unban ⚠️
-handleCommand.commandNotExist=━━━━━━━✦━━━━━━━ \n    ✨ Assalamu Alaikum! 💖🌟\n━━━━━━━✦━━━━━━━\n\nThe command you gave is not valid here.\n\nCould it be— \n\n•—» %1  «—•\n\nCheck your input, please!\n━━━━━━━✦━━━━━━━".
-handleCommand.commandThreadBanned=Your thread is unable to use command "%1"
-handleCommand.commandUserBanned=You are unable to use command "%1"
-handleCommand.threadNotAllowNSFW=This Commnd Only use Andmi
-handleCommand.cantGetInfoThread=Can't get your thread's info, error: %1
-handleCommand.permssionNotEnough="%1"\n⎯⎯⎯⎯⎯⎯\n\n✨ Only Maharaja ULLASH is authorized to use this command.\n✨ You are just a subject, not allowed to use this 🙂🐸\n⎯⎯⎯⎯⎯⎯\n"%1"\n⎯⎯⎯⎯⎯⎯\n✨ শুধু মহারাজ উল্লাস এই কমান্ড ব্যবহার করতে পারবেন।\n✨ তুই তো কেবল প্রজা! তুই এই কমান্ড ব্যবহার করতে পারবি না 🙂🐸
-handleCommand.cantSetMessageReaction=Having some unexpected error at setMessageReaction, error: %1
-handleCommand.executeCommand=[ %1 ] Command used: %2 by user: %3 at thread: %4 | Args included: %5 | Processing time: %6ms
-handleCommand.commandError=Having some unexpected error when using command %1, error: %2
-
-# includes/handle/handleCommandEvent.js
-
-handleCommandEvent.moduleError=Having some unexpected error when using command %1, error: %2
-
-# includes/handle/handleCreateDatabase.js
-
-handleCreateDatabase.newThread=new thread: %1
-handleCreateDatabase.newUser=new user %1
-
-# includes/handle/handleEvent.js
-
-handleEvent.executeEvent=[ %1 ] Event was executed: %2 at thread: %3 | Processing time: %4ms
-handleEvent.eventError=Having some error when executing event %1, error: %12
-
-# includes/handle/handleReaction.js
-
-handleReaction.missingValue=Missing value to respond your problem
-handleReaction.executeError=Having some error when responding to your problem, error: %1
-
-# includes/handle/handleReply.js
-
-handleReply.missingValue=Missing value to respond your problem
-handleReply.executeError=Having some error when responding your problem, error: %1
-
-# includes/handle/handleSchedule.js
-
-handleSchedule.exectuteError=Having some error when schedule at module %1, error: %2
-
-# utils/index.js
-
-utils.throwError=ℹ️ [!] ɪғ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ɴᴏᴛ ᴡᴏʀᴋɪɴɢ, ᴘʟᴇᴀsᴇ ᴜsᴇ ᴀɴᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ. %1help %2 ᴜsᴇ ғᴏʀ ᴍᴏʀᴇ ᴜsᴀɢᴇ💙🥺
-# updater.js
-
-updater.latestVersion=You are using the latest version
-updater.cantFindVersion=You are using an undefined version (%1), please check your package.json file again
-updater.newVersions=There are %1 new versions to update, starting to update...
-updater.updateSuccess=Update successfully%1
-updater.configChanged=The %1 has been changed, please check your config.json file again
-updater.installingPackages=Installing dependencies for bot...
-updater.installSuccess=Installed dependencies successfully, restart the bot to use the new version
-updater.backupSuccess=Successfully backed up changed files, see in the %1 folder
-updater.restartToApply=. Restart the bot to apply the new version
-updater.skipFile=There is a new version of the %1 file, but you have skipped this file during the update process with the comment %2 in this file
+{
+  "ar": {
+    "newVersionDetected": "أنت تستخدم الإصدار %1، أحدث إصدار هو %2.",
+    "errorFormat": "وحدة غير صالحة!",
+    "nameExist": "اسم الوحدة مشابه لوحدة أخرى!",
+    "notFoundLanguage": "الوحدة %1 لا تدعم لغتك",
+    "notFoundPackage": "تعذر العثور على الحزمة %1 لدعم الوحدة %2، جاري التثبيت...",
+    "cantInstallPackage": "تعذر تثبيت الحزمة %1 للوحدة %2، الخطأ: %3",
+    "loadedPackage": "تم تثبيت الحزمة بالكامل بنجاح للوحدة %1",
+    "loadedConfig": "تم تثبيت الإعدادات بنجاح للوحدة %1",
+    "cantLoadConfig": "تعذر تثبيت إعدادات الوحدة %1، الخطأ: %2",
+    "cantOnload": "تعذر بدء إعداد الوحدة %1، الخطأ: %1",
+    "successLoadModule": "تم تثبيت الوحدة %1 بنجاح",
+    "failLoadModule": "تعذر تثبيت الوحدة %1، الخطأ: %2",
+    "finishLoadModule": "تم تثبيت %1 أوامر الوحدة و %2 أحداث الوحدة بنجاح",
+    "foundPathAppstate": "تم العثور على ملف appstate",
+    "notFoundPathAppstate": "تعذر العثور على ملف appstate",
+    "checkListGban": "جارٍ التحقق من قائمة الحظر العالمي...",
+    "banDevice": "جهازك تم حظره من ULLASH، يرجى التواصل مع m.me/100086680386976 لمعرفة المزيد أو طلب مفتاح رفع الحظر.",
+    "keyNotSameFormat": "تنسيق خاطئ، يجب أن يحتوي الرمز على 6 أرقام",
+    "codeInputExpired": "رمزك خاطئ أو منتهي الصلاحية",
+    "unbanDeviceSuccess": "تم رفع الحظر عن جهازك، يرجى إعادة تشغيل البوت لاستخدامه",
+    "userBanned": "لقد تم حظرك من ULLASH عند %1 بسبب: %2. يرجى التواصل مع m.me/100086680386976 لمزيد من المعلومات",
+    "finishCheckListGban": "تم التحقق من قائمة الحظر العالمي",
+    "handleListenError": "حدث خطأ غير متوقع في handleListener، الخطأ: %1",
+    "warningSourceCode": "تم اكتشاف تغيير في هيكلية الكود المصدري، توقف الآن!",
+    "refreshListen": "تم تحديث handleListener...",
+    "successConnectDatabase": "تم الاتصال بقاعدة البيانات بنجاح!",
+    "failConnectDatabase": "فشل الاتصال بقاعدة البيانات، الخطأ: %1"
+  },
+  "en": {
+    "newVersionDetected": "You are using version %1, the latest version is %2.",
+    "errorFormat": "Malformed module!",
+    "nameExist": "Module's name is similar to another module!",
+    "notFoundLanguage": "Module %1 doesn't support your language",
+    "notFoundPackage": "Can't find package %1 support for module %2, installing...",
+    "cantInstallPackage": "Can't install package %1 for module %2, error: %3",
+    "loadedPackage": "Installed whole package successfully for module %1",
+    "loadedConfig": "Installed config successfully for module %1",
+    "cantLoadConfig": "Can't install config of module %1, error: %2",
+    "cantOnload": "Can't launch setup of module %1, error: %1",
+    "successLoadModule": "Successfully installed module %1",
+    "failLoadModule": "Can't install module %1, error: %2",
+    "finishLoadModule": "Installed %1 module commands and %2 module events successfully",
+    "foundPathAppstate": "Found file appstate",
+    "notFoundPathAppstate": "Can't find appstate file",
+    "checkListGban": "Checking global ban list...",
+    "banDevice": "Your device has been banned from ULLASH, please contact m.me/100086680386976 for more info or to request unban key.",
+    "keyNotSameFormat": "Wrong format, code must contain 6 numbers",
+    "codeInputExpired": "Your code is wrong or out of date",
+    "unbanDeviceSuccess": "Your device is now unbanned, please restart the bot to use",
+    "userBanned": "You have been banned from ULLASH at %1 for: %2. Please contact m.me/100086680386976 for more info",
+    "finishCheckListGban": "Checked global ban list",
+    "handleListenError": "handleListener has encountered an unexpected error, error: %1",
+    "warningSourceCode": "DETECTED THAT SOURCE CODE'S STRUCTURE HAS BEEN CHANGED, STOP NOW!",
+    "refreshListen": "Refreshed handleListener...",
+    "successConnectDatabase": "Connected to database successfully!",
+    "failConnectDatabase": "Failed to connect to database, error: %1"
+  }
+}
